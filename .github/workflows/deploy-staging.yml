@@ -10,7 +10,7 @@ env:
   AZURE_WEBAPP_NAME: czadanzer-ttt-app
 
 jobs:
-  build:
+  build: 
     if: contains(github.event.pull_request.labels.*.name, 'stage')
     
     runs-on: ubuntu-latest
